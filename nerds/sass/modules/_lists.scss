@@ -1,0 +1,22 @@
+// стандартный список
+.page-list {
+  margin-bottom: em(70px);
+
+  // элемент списка
+  &__item {
+    @include leader;
+
+    // буллет списка
+    &:before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      bottom: 1px;
+      width: 25px;
+      height: 2px;
+      margin-right: 10px;
+      background-color: $list--type;
+      vertical-align: middle;
+    }
+  }
+}

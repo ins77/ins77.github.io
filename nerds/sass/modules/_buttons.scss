@@ -1,0 +1,19 @@
+.btn {
+  
+  @include btn(danger, red);
+  @include btn(success, green);
+  @include btn(warning, yellow);
+  @include btn(info, grey);
+
+  // длинная кнопка
+  &--lg {
+    min-width: 240px;
+  }
+  
+  // кнопка в ширину контейнера
+  &--wide {
+    display: block;
+    width: 100%;
+  }
+  
+}

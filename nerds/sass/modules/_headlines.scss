@@ -1,0 +1,28 @@
+// ==========================================================================
+// Headlines
+// ==========================================================================
+
+
+.hdln {
+
+  &--primary {
+    margin-bottom: rhythm(1, 36px);
+    font-weight: $font-weight--medium;
+    @include adjust-font-size-to(36px);
+  }
+
+  &--secondary {
+    margin-bottom: rhythm(1, 18px);
+    font-weight: $font-weight--medium;
+    text-transform: uppercase;
+    @include adjust-font-size-to(18px);
+  }
+
+  &--list {
+    margin-top: em(48px);
+    font-weight: $font-weight--medium;
+    text-transform: uppercase;
+    color: $text--sec;
+  }
+
+}

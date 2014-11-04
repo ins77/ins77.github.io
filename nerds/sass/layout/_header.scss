@@ -1,0 +1,19 @@
+.header {
+  padding-top: em(27px);
+  padding-bottom: em(80px);
+  background-color: $background__header;
+
+  &__logo {
+    display: block;
+    @include retina-image(logo, 139px 56px);
+    @include squish-text;
+  }
+
+  // заголовок в хэдере на странице Магазин
+  &__title {
+    font-size: 40px;
+    font-weight: $font-weight--thin;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

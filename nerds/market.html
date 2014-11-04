@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nёrds - Market</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="market">
+    
+    <header class="header">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col1">
+            <a class="header__logo" href="#"><h1>Nerds</h1></a>
+          </div><!-- col1 -->
+          <div class="col2">
+            <nav class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a href="index.html" class="main-nav__link">Студия</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link disabled">Клиенты</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link main-nav__link--current">Магазин</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link disabled">Контакты</a>
+                </li>
+                <li class="main-nav__item main-nav__item--basket">
+                  <a href="#" class="main-nav__link icon-basket disabled">Корзина</a>
+                </li>
+              </ul>
+            </nav>
+          </div><!-- col2 -->
+        </div><!-- row -->
+        <h2 class="header__title">
+          Добро пожаловать в магазин<br>готовых макетов
+        </h2>
+
+      </div><!-- container -->
+
+    </header>
+    
+
+    
+    <main>
+      
+      <div class="container">
+        <div class="row">
+          
+          <div class="col1">
+            <form class="filter" action="/">
+              <h3 class="hdln--secondary">Стоимость:</h3>
+              <div class="range-filter">
+                <div class="range-filter__wrap">
+                  <div class="range-filter__control"></div>
+                </div><!-- range-filter__wrap -->
+                <label class="range-filter__label">
+                  От <input class="range-filter__input range-filter__input--min" type="text" name="price-from" value="0">
+                </label>
+                <label class="range-filter__label">
+                  До <input class="range-filter__input range-filter__input--max" type="text" name="price-to" value="15000">
+                </label>
+              </div> <!-- range-filter -->
+
+              <h3 class="hdln--secondary">Сетка:</h3>
+              <div class="filter-list">
+                <label class="filter-list__label">
+                  <input name="filter-grid" type="radio" checked>
+                  <span>Адаптивная</span>
+                </label>
+                
+                <label class="filter-list__label">
+                  <input name="filter-grid" type="radio">
+                  <span>Фиксированная</span>
+                </label>
+                
+                <label class="filter-list__label">
+                  <input name="filter-grid" type="radio">
+                  <span>Резиновая</span>
+                </label>
+              </div><!-- filter-list -->
+
+              <h3 class="hdln--secondary">Особенности:</h3>
+              <div class="filter-list">
+                <label class="filter-list__label">
+                  <input name="filter-slider" type="checkbox" checked>
+                  <span>Слайдер</span>
+                </label>
+
+                <label class="filter-list__label">
+                  <input name="filter-features" type="checkbox">
+                  <span>Блок преимуществ</span>
+                </label>
+
+                <label class="filter-list__label">
+                  <input name="filter-news" type="checkbox" checked>
+                  <span>Новости</span>
+                </label>
+
+                <label class="filter-list__label">
+                  <input name="filter-gallery" type="checkbox">
+                  <span>Галерея</span>
+                </label>
+
+                <label class="filter-list__label">
+                  <input name="filter-basket" type="checkbox">
+                  <span>Корзина</span>
+                </label>
+              </div><!-- filter-list -->
+            </form>
+          </div><!-- col1 -->
+
+          <div class="col2">
+            <div class="sort">
+              <ul class="sort__list">
+                <li class="sort__item">Сортировать:</li>
+                <li class="sort__item"><a class="sort__link" href="#">По цене</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По типу</a></li>
+                <li class="sort__item"><a class="sort__link" href="#">По функционалу</a></li>
+              </ul>
+              <a class="icon-up-dir" href="#"></a>
+              <a class="icon-down-dir" href="#"></a>
+            </div><!-- sort -->
+            <div class="sort-items">
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/aviator.jpg" alt="aviator">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/sunset.jpg" alt="sunset">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/forte.jpg" alt="forte">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/marquee.jpg" alt="marquee">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/avenue.jpg" alt="avenue">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+              <div class="sort-item">
+                <div class="sort-item__dots">
+                  <div class="sort-item__dot"></div>
+                </div>
+                <div class="sort-item__info">
+                  <h3 class="hdln--secondary">Sunset</h3>
+                  <p class="sort-item__text">Интернет магазин<br>с личным кабинетом</p>
+                  <a href="#" class="sort-item__btn btn btn--danger">10 000 Р.</a>
+                </div><!-- sort-item__info -->
+                <div class="sort-item__img">
+                  <img src="img/dovetail.jpg" alt="dovetail">
+                </div><!-- sort-item__img -->
+              </div><!-- sort__item -->
+            </div><!-- sort__items -->
+
+              <div class="paginator">
+                <a href="#" class="paginator__btn btn--info paginator__btn--current">1</a>
+                <a href="#" class="paginator__btn btn--info">2</a>
+                <a href="#" class="paginator__btn btn--info">3</a>
+                <a href="#" class="btn btn--info">Следующая</a>
+              </div><!-- paginator -->
+          </div><!-- col2 -->
+
+        </div><!-- row -->
+      </div><!-- container -->
+
+    </main>
+
+
+
+    <footer class="footer">
+      <div class="footer__map">
+        <div class="container">
+          <div class="address">
+              <h4 class="address__title"><strong>Nёrds</strong> design studio</h4>
+              <p class="address__text">
+                350000, Краснодар,<br>ул. Головатого, 100
+              </p>
+              <p class="address__text">
+                тел. +7 (861) 275-75-75
+              </p>
+              <a href="#" class="btn--danger btn--wide">напишите нам</a>
+            </div><!-- address -->
+          </div><!-- container -->
+          <div id="map_canvas" style="width:100%; height:100%"></div>
+      </div><!-- footer__map -->
+      <div class="footer__social">
+        <div class="container">
+          <div class="row">
+            <div class="col1">
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="#" class="social-list__btn icon-vkontakte"></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__btn icon-facebook"></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__btn icon-instagramm"></a>
+                </li>
+              </ul>
+            </div><!-- col1 -->
+            <div class="col2">
+              <span class="footer__title">Давайте дружить, это выгодно!</span>
+              <p class="footer__text">Скидка 10% для друзей из социальных сетей</p>
+            </div><!-- col2 -->
+          </div><!-- row -->
+        </div><!-- container -->
+      </div><!-- footer-social -->
+    </footer>
+
+    <div class="modal js-modal">
+      <form class="form" action="//forms.brace.io/capricorn7_89@mail.ru" method="POST">
+        
+        <label class="form__label form__label--half"><strong class="form__text">Ваше имя:</strong>
+          <input class="form__input" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </label>
+
+        <label class="form__label form__label--half"><strong class="form__text">Ваш e-mail:</strong>
+          <input class="form__input" type="email" name="_replyto" placeholder="Для отправки ответа">
+        </label>
+
+        <label class="form__label form__label--text"><strong class="form__text">Текст письма:</strong>
+          <textarea class="form__input form__input--textarea" name="message" rows="10" placeholder="В свободной форме"></textarea>
+        </label>
+
+        <input type="submit" class="form__btn btn--danger" value="Отправить">
+        <input type="reset" class="form__btn btn--info" value="Отменить">
+
+      </form>
+    </div><!-- modal -->
+    
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/lib/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
+
+

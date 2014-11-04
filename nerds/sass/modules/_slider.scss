@@ -1,0 +1,22 @@
+// слайдер
+.slider {
+  position: relative;
+
+  // изображение в слайде
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    
+    // изображение калькулятора в слайде
+    &--calc {
+      top: 0;
+      right: 10px;
+    }
+    
+    // изображение робота в слайде
+    &--robot {
+      top: 33px;
+    }
+  }
+}

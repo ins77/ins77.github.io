@@ -1,0 +1,136 @@
+// сортировка на странице Market
+.sort {
+  @extend %cf;
+  margin-bottom: em(24px);
+
+  &__list {
+    float: left;
+    width: 480px;
+    color: #000;
+    font-weight: $font-weight--medium;
+    font-size: 12px;
+    line-height: (18px / 12px);
+    text-transform: uppercase;
+  }
+
+  &__item {
+    float: left;
+    margin-right: 40px;
+  }
+
+  &__link {
+    color: rgba(#000, .2);
+    border-bottom: 1px dotted #00ca74;
+    @include transition;
+
+    &:hover {
+      color: #000;
+      border-bottom-style: solid;
+    }
+
+    &:active {
+      border-bottom-style: solid;
+      border-bottom-color: rgba(#00ca74, 0);
+    }
+  }
+
+  .icon-up-dir,
+  .icon-down-dir {
+
+    &:before {
+      float: right;
+      font-size: 23px;
+      line-height: (20px / 23px);
+      color: #c1c1c1;
+      @include transition;
+    }
+    
+    &:hover:before {
+      color: #000;
+    }
+
+    &:active:before {
+      color: #00ca74;
+    }
+  }
+  
+}
+
+.sort-items {
+  @extend %cf;
+  margin-left: -79px;
+}
+
+.sort-item {
+  position: relative;
+  float: left;
+  width: 240px;
+  margin-left: 79px;
+  margin-bottom: 80px;
+  padding-top: 30px;
+  background-color: #797979;
+  background-color: rgba(#797979, .2);
+  border-radius: $br--default $br--default 0 0;
+  @include transition;
+  
+  &:hover {
+    background-color: #797979;
+
+    .sort-item__info {
+      opacity: 1;
+    }
+  }
+  
+  // кнопки браузерной строки (белые точки)
+  &__dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 7px;
+    background-color: #fff;
+    border-radius: $br--round;
+  }
+
+  &__dots {
+    position: absolute;
+    top: 10px;
+    left: 13px;
+    font-size: 0;
+
+    &:before,
+    &:after {
+      content: "";
+      @extend .sort-item__dot;
+    }
+  }
+  
+  // появляющаяся информация о сайте
+  &__info {
+    opacity: 0;
+    padding: 30px 30px 0;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden;
+    @include stretch(50px, 20px, 20px, 20px);
+    @include transition;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $text--sec;
+    @include trailer(1, 14px);
+  }
+
+  &__btn {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  // изображение
+  &__img {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+  }
+  
+}

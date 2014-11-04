@@ -1,0 +1,42 @@
+.studio {
+  padding-top: em(80px);
+  border-top: 2px solid #f1f1f1;
+
+  &__logo {
+    position: relative;
+    top: -5px;
+    display: block;
+    margin-bottom: em(120px);
+    @include retina-image(logo-big, 187px 75px);
+  }
+
+  &__label {
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 50%;
+      height: 2px;
+      vertical-align: middle;
+      background-color: #f1f1f1;
+    }
+
+    &:before {
+      right: .5em;
+      margin-left: -50%;
+    }
+
+    &:after {
+      left: .5em;
+      margin-right: -50%;
+    }
+  }
+}

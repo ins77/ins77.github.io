@@ -1,0 +1,90 @@
+.footer {
+  
+  // карта
+  &__map {
+    position: relative;
+    height: 416px;
+    width: 100%;
+  }
+
+  // блок с соцкнопками
+  &__social {
+    padding-top: em(77px);
+    padding-bottom: em(73px);
+  }
+  
+  // заголовок в блоке с соцкнопками
+  &__title {
+    display: inline-block;
+    margin-bottom: em(5px);
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  // текст в блоке с соцкнопками
+  &__text {
+    margin-bottom: 0;
+  }
+}
+
+// блок с адресом
+.address {
+  position: absolute;
+  top: 75px;
+  z-index: 100;
+  width: 240px;
+  padding: 26px 23px;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: rhythm(1, 16px);
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: (20px / 16px);
+    color: #797979;
+  }
+}
+
+// социальные кнопки
+.social-list {
+
+  &__item {
+    position: relative;
+    top: em(5px);
+    float: left;
+    margin-left: 26px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    color: #fff;
+    text-align: center;
+    background-color: #eee;
+    border-radius: $br--round;
+    @include single-transition(background-color);
+
+    &:hover {
+      background-color: palette(red);
+    }
+
+    &:active {
+      background-color: palette(red, x-dark);
+      @include box-shadow(inset 0 3px rgba(0,0,0,.15));
+    }
+
+    &:before {
+      font-size: 24px;
+      line-height: 62px; //центрируем соц-иконки
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@include border-box-sizing;
+
+* {
+  @include selection(#000, #fff);
+}
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--light;
+  min-width: 960px;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: $color__link;
+  text-decoration: none;
+  font-weight: $font-weight--medium;
+}
+
+p {
+  @include trailer(1, 16px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+

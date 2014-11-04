@@ -1,0 +1,102 @@
+.range-filter {
+  margin-bottom: 50px;
+  white-space: nowrap;
+
+  &__wrap {
+    margin-bottom: 14px;
+    padding: 39px 30px;
+    background-color: #f1f1f1;
+    border-radius: $br--default;
+  }
+
+  &__label {
+    display: inline-block;
+    text-transform: uppercase; 
+  }
+
+  &__input {
+    width: 80px;
+    margin-left: 6px;
+    padding: 10px;
+    border: none;
+    color: $text--sec;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: $br--default;
+    outline: none;
+
+    &--min {
+      margin-right: 13px;
+    }
+  }
+
+}
+
+
+
+// Контейнер слайдера
+.ui-slider {
+  position: relative;
+}
+
+// Ползунок
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 20px;   // Задаем нужную ширину
+  height: 20px;  // и высоту
+  background-color: #ababab;
+  border: 8px solid #fff;
+  border-radius: $br--round;
+  cursor: pointer;
+  outline: none;
+  @include box-shadow(0 2px rgba(0,0,0,.15));
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: .7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+
+// горизонтальный слайдер (сама полоса по которой бегает ползунок)
+.ui-slider-horizontal {
+   height: 2px; // задаем высоту согласно дизайна
+}
+
+// позиционируем ползунки
+.ui-slider-horizontal .ui-slider-handle { 
+  top: -9px;
+  margin-left: -10px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min { 
+  left: 40px;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 40px;
+}
+
+// оформление полосы по которой ходит ползунок
+.ui-widget-content { 
+  background: #d7dcde;
+}
+
+// оформление активного участка (между двумя ползунками)
+.ui-widget-header { 
+  background: #00ca74;
+}
+
+// скругление для полосы слайдера
+// .ui-corner-all {
+//  border-radius: 4px;
+// }

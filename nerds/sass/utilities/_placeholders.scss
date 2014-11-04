@@ -1,0 +1,27 @@
+// Clearfix
+
+%cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
+}
+
+// Buttons
+
+%btn {
+  display: inline-block;
+  padding: 10px 15px;
+  min-width: 140px;
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size : 12px;
+  line-height: (18px / 12px);
+  font-weight: $font-weight--medium;
+  border-radius : $br--default;
+  outline: 0;
+  @include single-transition(background-color);
+}

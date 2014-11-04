@@ -1,0 +1,95 @@
+// ---------------- Typography ------------------
+
+// Font Stacks
+
+$font-url--google     : "http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+$font-family--primary : 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin    : 100;
+$font-weight--light   : 300;
+$font-weight--medium  : 500;
+
+// Text 
+
+$base__font-size  : 16px;
+$base__line       : 22px;  
+
+// Rhythm
+
+$base-font-size    : $base__font-size;
+$base-line-height  : $base__line;
+@include establish-baseline;
+
+
+
+
+
+// ------------------ Colors --------------------
+
+// Descriptive Base Colors by http://chir.ag/projects/name-that-color
+
+// Color Usage
+
+$text--sec             : #283136;
+$color__link           : #000;
+$color__link--hover    : #fb565a;
+
+$input__border         : #d7dcde;
+$input__border--hover  : #a2a9ac;
+$input__border--focus  : #56bffb;
+
+$radiocheck            : #c1c1c1;
+$radiocheck--hover     : shade($radiocheck, 15%);
+
+$background__header    : #eee;
+
+$hdln--list            : #283136;
+$list--type            : #fb565a;
+
+// Color Palette Modifiers <Хорошо подойдет для состояний наведения и нажатия кнопок>
+
+$color-palettes: (
+  red: (
+    base   : #fb565a,
+    dark   : shade(#fb565a, 14%),
+    x-dark : shade(#fb565a, 19%)
+  ),  
+  green: (
+    base   : #00ca74,
+    dark   : shade(#00ca74, 15%),
+    x-dark : shade(#00ca74, 23%)
+  ),
+  yellow: (
+    base   : #efc84a,
+    dark   : shade(#efc84a, 10%),
+    x-dark : shade(#efc84a, 19%)
+  ),
+  gray: (
+    base   : #f1f1f1,
+    dark   : shade(#f1f1f1, 5%),
+    x-dark : shade(#f1f1f1, 11%)
+  )
+);
+
+
+
+
+
+// ------------------- Other ---------------------
+
+// Border radius
+
+$br--default     : 3px;
+$br--round       : 50%;
+
+// Transitions
+
+$default-transition-duration: .3s;
+
+// Responsive
+
+$brkpoint-sm   : 1px;
+$brkpoint-md   : 768px;
+$brkpoint-lg   : 1100px;

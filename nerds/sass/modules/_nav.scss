@@ -1,0 +1,74 @@
+// ==========================================================================
+// Nav
+// ==========================================================================
+
+// главная навигация
+.main-nav {
+  margin-top: em(23px);
+  margin-bottom: em(70px);
+  text-align: right;
+  
+  // элементы навигации
+  &__item {
+    display: inline-block;
+    margin-right: -.04em;
+    margin-left: em(30px);
+
+    // пункт меню с корзиной
+    &--basket {
+      margin-left: 52px;
+    }
+  }
+  
+  // навигационные ссылки
+  &__link {
+    display: inline-block;
+    padding: em(3px) 0;
+    border-bottom: 2px solid transparent;
+    font-size: 14px;
+    font-weight: $font-weight--medium;
+    line-height: (30px / 14px);
+    text-transform: uppercase;
+    @include transition;
+    
+    &:hover {
+      color: $color__link--hover;
+    }
+
+    &:active {
+      color: $color__link;
+      opacity: .3;
+    }
+    
+    // активная навигационная ссылка
+    &--current {
+      color: $color__link;
+      border-bottom-color: #fb565a;
+
+      &:hover {
+        color: $color__link;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    //иконка корзины (надо еще поработать над иконкой)
+    &.icon-basket {
+      &:before {
+        margin-right: 7px;
+        font-size: 16px;
+        color: #a6a6a6;
+        @include transition;
+      }
+      &:hover:before {
+        color: #fb565a;
+      }
+      &:active:before {
+        color: #cbcbcb;
+      }
+    }
+  }
+
+}

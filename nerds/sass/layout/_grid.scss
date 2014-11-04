@@ -1,0 +1,31 @@
+.container {
+  @extend %cf;
+  position: relative;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.row {
+  @extend %cf;
+  margin-right: percentage(-40px / 880px);
+  margin-left: percentage(-40px / 880px);
+}
+
+%col {
+  float: left;
+  margin-left: percentage(40px / 960px);
+  margin-right: percentage(40px / 960px);
+}
+
+.col1 {
+  @extend %col;
+  width: percentage(240px / 960px);
+}
+
+.col2 {
+  @extend %col;
+  width: percentage(560px / 960px);
+}

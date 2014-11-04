@@ -1,0 +1,11 @@
+.order {
+  margin-bottom: em(82px);
+
+  &__img {
+    margin-bottom: em(30px);
+
+    img {
+      display: block;
+    }
+  }
+}

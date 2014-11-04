@@ -1,0 +1,154 @@
+.modal {
+  $width: 630px;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  z-index: 1000;
+  width: $width;
+  margin-left: ($width / -2);
+  background-color: #fff;
+  @include box-shadow(0 20px 40px rgba(0,0,0,.75));
+
+  display: none;
+}
+
+
+.form {
+  @extend %cf;
+  padding: 54px 85px 50px;
+
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    
+    &--half {
+      float: left;
+      width: 48%;
+      margin-left: 4%;
+
+      &:first-child {
+        margin-left: 0
+      }
+    }
+
+    &--text {
+      clear: both;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 5px;
+  }
+ 
+  &__input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid $input__border;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--light;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: $br--default;
+    outline: 0;
+    @include transition;
+    @include input-placeholder {
+      color: #000;
+      opacity: 1;
+      font-weight: $font-weight--medium;
+    }
+
+    &:hover {
+      border-color: $input__border--hover; 
+    }
+
+    &:focus {
+      border-color: $input__border--focus; 
+    }
+  }
+ 
+  &__btn {
+    float: left;
+    width: 48%;
+    margin-top: 20px;
+    margin-left: 4%;
+
+    &[type="submit"] {
+      margin-left: 0;
+    }
+  }
+
+}
+
+
+// форма с фильтром - радио и чеки
+.filter-list {
+  margin-bottom: 50px;
+
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: rhythm(.75);
+    cursor: pointer;
+    color: $text--sec;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      position: absolute;
+      left: 3px;
+      top: 10px;
+      opacity: 0;
+      
+      + span:before {
+        content: "\e809";
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        width: 1em;
+        margin-right: 5px;
+        color: $radiocheck;
+        font-family: "fontello";
+        speak: none;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        vertical-align: bottom;
+        // -webkit-font-smoothing: antialiased; 
+        @include single-transition(color);
+      }
+
+      &:checked + span:before {
+        content: "\e808";
+      }
+
+      &:disabled + span:before {
+        opacity: .3;
+      }
+    } 
+
+    input[type="radio"] {
+
+        + span:before {
+          content: "\e806";
+          top: 2px;
+        }
+
+        &:checked + span:before {
+          content: "\e807";
+        }
+
+    }
+
+    &:hover {
+      input[type="checkbox"] + span:before,
+      input[type="radio"] + span:before {
+        color: $radiocheck--hover;
+      }
+    }
+
+  }
+
+}
