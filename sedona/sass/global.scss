@@ -1,0 +1,83 @@
+$font-base: 'PT Sans', Verdana, sans-serif;
+
+
+body {
+  min-width: 768px;
+  font: 400 14px/1.5 $font-base;
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+// неактивные элементы
+.disabled {
+  opacity: .3;
+  pointer-events: none;
+}
+
+// clearfix
+%cf {
+  &:after {       
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// скрыть текст
+%hide {
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// заголовки
+%page-title {
+  font-size: 21px;
+  line-height: 1.238095238095238;
+  font-weight: 700;
+}
+
+// кнопки
+%btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+
+  // голубая кнопка
+  &--primary {
+    @extend %btn;
+    background-color: #81b3d2;
+    transition: background-color .3s, color .3s;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+      color: rgba(255,255,255,.3);
+    }
+  }
+
+  // коричневая кнопка
+  &--secondary {
+    @extend %btn;
+    background-color: #766357;
+    transition: background-color .3s, color .3s;
+
+    &:hover {
+      background-color: #604e43;
+    }
+
+    &:active {
+      background-color: #503e33;
+      color: rgba(255,255,255,.3);
+    }
+  }
+
+}

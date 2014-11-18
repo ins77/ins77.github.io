@@ -1,0 +1,18 @@
+// сброс
+@import "normalize";
+// сетка страницы
+@import "layout";
+// глобальные стили, переменные, плэйсхолдеры
+@import "global";
+// шапка сайта
+@import "header";
+// промо-блок, блок с вводной информацией на главной странице
+@import "promo";
+// стили главной страницы
+@import "content-index";
+// стили страницы Гостиницы
+@import "content-hotels";
+// футер сайта
+@import "footer";
+// медиа-выражения
+@import "media";

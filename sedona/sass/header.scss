@@ -1,0 +1,88 @@
+// главная навигация
+.main-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top .5s;
+
+  // &--invisible {
+  //   height: 0;
+  // }
+
+  &--fix {
+    position: fixed;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+  }
+  
+  
+
+  // список главного меню
+  &__list {
+    @extend .container;
+    padding-top: 0;
+    line-height: 1.857142857142857;
+    font-weight: 700; 
+    box-shadow: none;     
+  }
+
+  // элемент списка
+  &__item {
+    float: left;
+    width: 20%; 
+    min-height: 1px; // для учета пункта меню с логотипом другими элементами списка
+  }
+
+  // пункт меню
+  &__link {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: #000; 
+    transition: color .3s, opacity .3s;     
+
+    &:hover {
+      color: #81b3d2;
+    }  
+
+    &:active {
+      color: #000; 
+      opacity: .3;
+    }
+    
+    
+    //активный пункт меню
+    &--active {
+      color: #766357;
+      transition: color .3s, opacity .3s;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        opacity: .3;
+      }
+    }
+
+  }
+
+
+  // логотип по центру
+  &__logo {
+    @extend %hide;
+    position: absolute;
+    top:0;
+    left: 50%;
+    z-index: 100;
+    margin-left: -69px;
+    width: 138px;
+    height: 70px;
+    background-image: url(../img/logo.png); 
+    background-repeat: no-repeat;    
+  }
+
+}

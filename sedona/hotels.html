@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Sedona - Hotels</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="hotels">
+    <div class="container">
+      <header class="header">
+        <nav class="main-nav" data-offset="0">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link disabled" href="#">Фото и видео</a></li>
+            <li class="main-nav__item"><div class="main-nav__logo">City of Sedona</div></li>
+            <li class="main-nav__item"><a class="main-nav__link disabled" href="#">Карта штата</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="hotels-main">
+        <form action="/" class="filters">
+          <div class="filters__col-left">
+            <h3 class="filters__title">Инфраструктура:</h3>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="pool" checked>
+                <label class="filters__label" for="pool">Бассейн</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="parking">
+                <label class="filters__label" for="parking">Парковка</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="internet">
+                <label class="filters__label" for="internet">Парковка</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filters__col-left">
+            <h3 class="filters__title">Тип жилья:</h3>
+            <ul class="filters__list">
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="hotel" checked>
+                <label class="filters__label" for="hotel">Гостиница</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="motel" checked>
+                <label class="filters__label" for="motel">Мотель</label>
+              </li>
+              <li class="filters__item">
+                <input class="filters__checkbox" type="checkbox" name="structure" id="apartaments" checked>
+                <label class="filters__label" for="apartaments">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filters__col-right">
+            <div class="range-filter">
+              <h3 class="filters__title">Стоимость в сутки (р):</h3>
+              <div class="range-filter__input">
+                <input type="text" name="range-filter--from" id="range-filter--from" placeholder="От 0">
+                <input type="text" name="range-filter--to" id="range-filter--to" placeholder="До 3000">
+              </div>
+              <div class="range-filter__scale">
+                <div class="range-filter__bar"></div>
+                <div class="range-filter__toggle range-filter__toggle--min"></div>
+                <div class="range-filter__toggle range-filter__toggle--max"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="find">
+          <div class="sorting">
+            <h2 class="sorting__title">Найдено: <span class="find__count">3</span></h2>
+            <ul class="sorting__list">
+              <li class="sorting__item">Сортировка:</li>
+              <li class="sorting__item"><a class="sorting__link sorting__link--active" href="#">По цене</a></li>
+              <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+              <li class="sorting__item"><a class="sorting__link" href="#">По рейтингу</a></li>
+            </ul>
+            <div class="sorting__controls">
+              <a href="#" class="sorting__control sorting__control--up">up</a>
+              <a href="#" class="sorting__control sorting__control--down">down</a>
+            </div>
+          </div>
+          <div class="find-item">
+            <div class="find-item__inner">
+              <div class="find-item__img">
+                <img src="img/amara-resort.jpg" alt="amara-resort">
+              </div>
+              <h2><a class="find-item__title" href="#">Amara Resort &amp; spa</a></h2>
+              <p><span class="find-item__text">Гостиница</span><span class="find-item__text">от 3500 р.</span></p>
+              <a href="#" class="find-item__btn--primary">Подробнее</a>
+              <a href="#" class="find-item__btn--secondary">Забронировать</a>
+              <div class="find-item__stars">
+                <span class="find-item__star">star</span><span class="find-item__star">star</span><span class="find-item__star">star</span><span class="find-item__star">star</span>
+              </div>
+              <p class="find-item__score">Рейтинг: 8,5</p>
+            </div>
+          </div><!-- find-item -->
+          <div class="find-item">
+            <div class="find-item__inner">
+              <div class="find-item__img">
+                <img src="img/desert-quail.jpg" alt="desert-quail">
+              </div>
+              <h2><a class="find-item__title" href="#">Desert Quail Inn</a></h2>
+              <p><span class="find-item__text">Мотель</span><span class="find-item__text">от 2000 р.</span></p>
+              <a href="#" class="find-item__btn--primary">Подробнее</a>
+              <a href="#" class="find-item__btn--secondary">Забронировать</a>
+              <div class="find-item__stars">
+                <span class="find-item__star">star</span><span class="find-item__star">star</span>
+              </div>
+              <p class="find-item__score">Рейтинг: 8,9</p>
+            </div>
+          </div><!-- find-item -->
+          <div class="find-item">
+            <div class="find-item__inner">
+              <div class="find-item__img">
+                <img src="img/poco-diablo.jpg" alt="poco-diablo">
+              </div>
+              <h2><a class="find-item__title" href="#">Villas at Poco Diablo</a></h2>
+              <p><span class="find-item__text">Апартаменты</span><span class="find-item__text">от 4000 р.</span></p>
+              <a href="#" class="find-item__btn--primary">Подробнее</a>
+              <a href="#" class="find-item__btn--secondary">Забронировать</a>
+              <div class="find-item__stars">
+                <span class="find-item__star">star</span><span class="find-item__star">star</span><span class="find-item__star">star</span>
+              </div>
+              <p class="find-item__score">Рейтинг: 9,2</p>
+            </div>
+          </div><!-- find-item -->
+        </div><!-- find -->
+      </main>
+
+      <footer class="footer">
+        <div class="row">
+          <div class="col col1">
+            <a class="footer__title" href="#">#visitsedona</a>
+          </div>
+          <div class="col col1">
+            <ul class="social">
+              <li class="social__item"><a href="#" class="social__btn social__btn--tw">Tweeter</a></li>
+              <li class="social__item"><a href="#" class="social__btn social__btn--fb">Facebook</a></li>
+              <li class="social__item"><a href="#" class="social__btn social__btn--yt">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col col1">
+            <p class="footer__text">
+              Website by <a class="footer__copyright-link footer__copyright-link--author" href="#"></a> for <a class="footer__copyright-link footer__copyright-link--client" href="#"></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div><!-- container -->
+    
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

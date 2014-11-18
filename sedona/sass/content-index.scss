@@ -1,0 +1,257 @@
+// Вводный заголовок
+.content-intro {
+  padding-top: 55px;
+  width: 500px;
+  margin: 0 auto;
+
+  &__title {
+    @extend %page-title;
+  }
+
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+// панели с достоинствами
+.panel {
+  height: 146px;
+  padding: 55px 17.5%;
+  background-color: #eee;
+  overflow: hidden;
+  
+  // заголовок панели
+  &__title {
+    @extend %page-title;
+  }
+
+  // номер причины
+  &__label {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  // текст в панеле
+  &__text {
+    margin-top: 25px;
+  }
+
+  // обертка для картинки
+  &__img {
+    height: 77px;
+    margin-bottom: 30px;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  &--primary {
+    color: #fff;
+    background-color: #81b3d2;
+  }
+
+  &--recommends {
+    min-height: 225px;
+    background-color: #fff;
+  }
+
+}
+
+
+
+
+
+// картинка к панели
+.feature-img {
+  height: 256px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+
+// блок поиска гостиниц
+.search {
+  position: relative;
+  padding-top: 55px;
+
+  &__title {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+
+  &__map {
+    width: 100%;
+    height: 593px;
+    margin-top: 104px;
+    background: #fff url(../img/map.jpg) no-repeat bottom center;
+    overflow: hidden;
+  }
+}
+
+
+
+
+// форма поиска гостиниц
+.form {
+  position: absolute;
+  left: 50%;
+  width: 566px;
+  margin-left: -283px;
+  margin-top: 28px;
+  font-weight: 700;
+  line-height: 1.857142857142857;
+  
+  &__header {
+    @extend %page-title;
+    padding: 25px 55px;
+    color: #fff;
+    background-color: #766357;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 10;
+    padding: 55px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      background-color: rgba(255,255,255,.9); 
+      -webkit-filter: blur(2px);
+    }
+  }
+
+  &__label {
+    float: left;
+    margin-top: 7px;
+
+    &--right {
+      float: right;
+      margin-right: 25px;
+    }
+  }
+
+  // обертка для полей ввода
+  &__input {
+    position: relative;
+    float: right;
+    width: 342px;
+    margin-bottom: 25px;
+  
+    // поле ввода даты заезда и выезда
+    &-text {
+      width: 100%;
+      padding: 7px 40px 7px 15px;
+      border: none;
+      color: #000;
+      font: 700 14px/1.857142857142857 $font-base;
+      text-transform: uppercase;
+      background-color: #f2f2f2;
+      outline: none;
+      box-sizing: border-box; 
+    }
+
+    
+    &--num {
+      width: 114px;
+
+      &-text {
+        @extend .form__input-text;
+        padding-left: 39px;
+        padding-right: 39px;
+        text-align: center;
+      }
+    }
+
+    &--down,
+    &--up {
+      position: absolute;
+      top: 0;
+      width: 39px;
+      height: 39px;
+      opacity: .3;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--down {
+      left: 0;
+      background: url(../img/minus.png) no-repeat center center;
+    }
+
+    &--up {
+      right: 0;
+      background: url(../img/plus.png) no-repeat center center;
+    }
+  }
+
+  &__calendar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    background: url(../img/calendar.png) no-repeat center center;
+    opacity: .2;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  // сетка формы
+  &__row {
+    @extend %cf;
+  }
+
+  &__leftcol {
+    float: left;
+    width: 50%;
+  }
+
+  &__rightcol {
+    float: right;
+    width: 50%;
+  }
+
+  
+
+  
+  // кнопка найти
+  &__btn {
+    @extend %btn--primary;
+    border: none;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 30px;
+    font: 700 21px/1.238095238095238 $font-base;
+    outline: none;
+  }
+  
+}

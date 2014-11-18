@@ -1,0 +1,82 @@
+.footer {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: #fff;
+
+  &__title {
+    @extend %page-title;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+  
+  // ссылка на страницу автора и заказчика
+  &__copyright-link {
+    display: inline-block;
+    width: 27px;
+    height: 33px;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+    // ссылка на автора сайта
+    &--author {
+      background: url(../img/author.png) no-repeat left top;
+    }
+    
+    // ссылка на заказчика сайта
+    &--client {
+      background: url(../img/academy.png) no-repeat left top;
+    }
+  }
+
+  // футер поверх контента
+  &--secondary {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,.9);
+  }
+  
+}
+
+
+
+
+
+// социальные кнопки
+.social {
+
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  &__btn {
+    @extend %btn--primary;
+    @extend %hide;
+    width: 46px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &--tw {
+      background-image: url(../img/social-tw.png);
+    }
+
+    &--fb {
+      background-image: url(../img/social-fb.png);
+    }
+
+    &--yt {
+      background-image: url(../img/social-yt.png);
+    }
+  }
+
+}
