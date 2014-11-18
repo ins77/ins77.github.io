@@ -1,0 +1,153 @@
+/* -------------------------------------------------- 
+				  Variables and Mixins
+----------------------------------------------------- */
+
+@linksColor: rgb(208, 0, 62);
+@textColor: rgb(98, 99, 102);
+@titleColor: rgb(62, 63, 64);
+@borderColor: rgb(215, 216, 217);
+@sliderTextColor: rgb(116, 196, 228);
+@fbColor: rgb(85, 116, 185);
+
+.transition(@what, @duration, @easing: ease-out) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+.transition-duration(@duration: 0.2s) {
+  -moz-transition-duration: @duration;
+  -webkit-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  transition-duration: @duration;
+}
+.box-sizing(@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+.linear-gradient(@color, @angle: 90deg, @startColor, @stopColor) {
+	background-color: @color;
+	background: -webkit-linear-gradient(@angle, @startColor 0%, @stopColor 100%);
+	background: -moz-linear-gradient(@angle, @startColor 0%, @stopColor 100%);
+	background: -o-linear-gradient(@angle, @startColor 0%, @stopColor 100%);
+	background: -ms-linear-gradient(@angle, @startColor 0%, @stopColor 100%);
+	background: linear-gradient(@angle, @startColor 0%, @stopColor 100%);
+}
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+.rotation(@deg:5deg){
+  .transform(rotate(@deg));
+}
+.scale(@ratio:1.5){
+  .transform(scale(@ratio));
+}
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+/* -------------------------------------------------- 
+				 /Variables and Mixins
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						LAYOUT
+----------------------------------------------------- */
+
+.clearfix:after,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.layout-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.row { 
+	margin-left: -15px; 
+	margin-right: -15px; 
+}
+
+.layout-column {
+	.box;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.layout-column.full { width: 100%; }
+.layout-column.two-thirds { width: 66.7%; }
+.layout-column.half { width: 50%; }
+.layout-column.third { width: 33.3%; }
+.layout-column.fourth { width: 25%; }
+.layout-column.flow-opposite { float: right; }
+
+
+/* -------------------------------------------------- 
+						/LAYOUT 
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						GLOBAL 
+----------------------------------------------------- */
+
+body {
+  font: 62.5% 'Titillium Web', Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* -------------------------------------------------- 
+						/GLOBAL 
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						HEADER
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						/HEADER
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						CONTENT
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						/CONTENT
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						FOOTER
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						/FOOTER
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						MEDIA
+----------------------------------------------------- */
+
+/* -------------------------------------------------- 
+						/MEDIA
+----------------------------------------------------- */
+
