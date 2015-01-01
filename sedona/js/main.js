@@ -40,3 +40,46 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function() {
+  $(".range-filter__slider").slider({
+    min: 0,
+    max: 3500,
+    range: true,
+    animate: true,
+    values: [0, 3000],
+    stop: function(event, ui) {
+      $(".js-price-min").val($(".range-filter__slider").slider("values",0));
+      $(".js-price-max").val($(".range-filter__slider").slider("values",1));
+    },
+    slide: function(event, ui) {
+      $(".js-price-min").val($(".range-filter__slider").slider("values",0));
+      $(".js-price-max").val($(".range-filter__slider").slider("values",1));
+    }
+  });
+  $(".js-price-min").change(function(){
+    var value1 = $(".js-price-min").val();
+    var value2 = $(".js-price-max").val();
+    if(parseInt(value1) > parseInt(value2)){
+      value1 = value2;
+      $(".js-price-min").val(value1);
+    }
+    $(".range-filter__slider").slider("values", 0, value1);
+    if(value1 > 3500){
+      value1 = 3500;
+      $(".js-price-min").val(3500)
+    }
+  });
+  $(".js-price-max").change(function(){
+    var value1 = $(".js-price-min").val();
+    var value2 = $(".js-price-max").val();
+    if(parseInt(value1) > parseInt(value2)){
+      value2 = value1;
+      $(".js-price-max").val(value2);
+    }
+    $(".range-filter__slider").slider("values", 1, value2);
+    if(value2 > 3500){
+      value2 = 3500;
+      $(".js-price-max").val(3500)
+    }
+  });
+});

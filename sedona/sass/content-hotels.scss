@@ -29,7 +29,7 @@
     line-height: 1.3125;
   }
 
-  &__item { 
+  &__item {
     position: relative;
     margin-top: 25px;
   }
@@ -84,12 +84,15 @@
 }
 
 
-
-
 .range-filter {
   width: 225px;
+  white-space: nowrap;
 
-  &__input {
+  @media screen and (min-width: 960px) {
+    width: 330px;
+  }
+
+  &__input-wrap {
     @extend %cf;
     position: relative;
     margin-top: 20px;
@@ -106,61 +109,78 @@
       background-color: #fff;
     }
 
-    input {
-      float: left;
-      width: 50%;
-      padding: 14px 10px;
-      border: none;
-      font-family: $font-base;
-      text-align: center;
-      color: #fff;
-      text-transform: uppercase;
-      background-color: transparent;
-      outline: none;
-      box-sizing: border-box;
-    }
   }
 
-  &__scale {
+  &__input {
+    float: left;
+    width: 50%;
+    padding: 14px 10px;
+    border: none;
+    font-family: $font-base;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+  // Контейнер слайдера
+  .ui-slider {
     position: relative;
-    width: 100%;
-    height: 2px;
-    margin-top: 40px;
-    background-color: rgba(255,255,255,.3);
   }
 
-  &__bar {
-    width: 70%;
-    height: 100%;
-    background-color: #fff;
-  }
-
-  &__toggle {
+  // Ползунок
+  .ui-slider .ui-slider-handle {
     position: absolute;
     top: -9px;
+    z-index: 10;
     width: 4px;
     height: 5px;
+    margin-left: -16px;
     border: 8px solid #fff;
     background-color: #ababab;
     border-radius: 50%;
     cursor: pointer;
+    outline: none;
+    transition: background-color .3s;
 
     &:active {
       background-color: #1c4f80;
     }
 
-    &--min {
-      left: 0;
+    &:first-of-type {
+      margin-left: 0;
     }
 
-    &--max {
-      left: 70%;
-    }
   }
- 
+
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    top: 0;
+    display: block;
+    border: 0;
+    height: 100%;
+  }
+
+  // горизонтальный слайдер (сама полоса по которой бегает ползунок)
+  .ui-slider-horizontal {
+     height: 2px; // задаем высоту согласно дизайна
+     margin-top: 40px;
+     margin-bottom: 40px;
+  }
+
+  // оформление полосы по которой ходит ползунок
+  .ui-widget-content {
+    background-color: rgba(#fff,.3);
+  }
+
+  // оформление активного участка (между двумя ползунками)
+  .ui-widget-header {
+    background-color: #fff;
+  }
+
 }
-
-
 
 
 
@@ -306,7 +326,7 @@
 
   }
 
-  
+
 
   &__controls {
     position: absolute;
@@ -347,5 +367,5 @@
 
   }
 
-  
+
 }
