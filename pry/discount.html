@@ -1,0 +1,863 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Pry / Main</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="categories">
+      
+    <header class="page-header">
+
+      <div class="main-menu">
+
+        <div class="container">
+
+          <a class="logo" href="index.html">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <div class="btn-group">
+            <a href="#" class="btn  btn--add-store">+ Добавить магазин</a>
+            <a href="#" class="btn  btn--login">Войти</a>
+          </div>
+          
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item  is-active">
+                <a href="categories.html" class="main-nav__link  main-nav__link--subnav">Разделы</a>
+
+                <ul class="main-nav__subnav">
+                  <li class="main-nav__subnav-item">
+                    <a href="#" class="main-nav__subnav-link  icon-clothes">Одежда и аксессуары</a>
+
+                    <div class="main-nav__deepnav">
+                      <div class="main-nav__deepnav-col-left">
+                        <a class="main-nav__deepnav-title" href="#">Для женщин</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Головные уборы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Пальто и куртки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Толстовки и худи</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Блузки и рубашки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Топы и футболки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Платья</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Спортивные костюмы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Брюки и капри</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Юбки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Шорты</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Купальники</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Нижнее белье</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Аксессуары</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.main-nav__deepnav-col-left -->
+
+                      <div class="main-nav__deepnav-col-right">
+                        <a class="main-nav__deepnav-title" href="#">Для мужчин</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Головные уборы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Пальто и куртки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Толстовки и худи</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Свитеры и рубашки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Футболки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Костюмы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Спортивные костюмы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Джинсы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Брюки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Шорты</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Плавки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Нижнее белье</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Аксессуары</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- /.main-nav__deepnav-col-right -->
+                    </div>
+                    <!-- /.main-nav__deepnav -->
+
+                  </li>
+                  <li class="main-nav__subnav-item">
+                    <a href="#" class="main-nav__subnav-link  icon-shoes">Обувь</a>
+
+                    <div class="main-nav__deepnav">
+                      <div class="main-nav__deepnav-col-left">
+                        <a class="main-nav__deepnav-title" href="#">Обувь</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские сапоги и ботинки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские туфли</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские сандалии</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские балетки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские кроссовки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские тапочки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские ботинки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские сандалии</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские кроссовки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские сланцы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские тапочки</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="main-nav__deepnav-col-right">
+                        <a class="main-nav__deepnav-title" href="#">Детская обувь</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Ботинки для девочек</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Сандалии для девочек</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Кроссовки для девочек</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Ботинки для мальчиков</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Сандалии для мальчиков</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Детские тапочки</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </li>
+                  <li class="main-nav__subnav-item">
+                    <a href="#" class="main-nav__subnav-link  icon-electronics">Электроника</a>
+
+                    <div class="main-nav__deepnav">
+                      <div class="main-nav__deepnav-col-left">
+                        <a class="main-nav__deepnav-title" href="#">Компьютеры и сеть</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Ноутбуки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Игровые приставки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Периферия и оргтехника</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Комплектующие</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Манипуляторы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Носители информации</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Сетевое оборудование</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Серверы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Аксессуары для ноутбуков</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="main-nav__deepnav-col-right">
+                        <a class="main-nav__deepnav-title" href="#">Бытовая техника</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Техника для кухни</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Домашнее видео и аудио</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Системы кондиционирования</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Пылесосы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Стиральные машины</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Камеры и фото</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Наушники</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Запчасти на технику</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- /.main-nav__deepnav -->
+
+                  </li>
+                  <li class="main-nav__subnav-item">
+                    <a href="#" class="main-nav__subnav-link  icon-bags">Сумки</a>
+
+                    <div class="main-nav__deepnav">
+                      <div class="main-nav__deepnav-col-left">
+                        <a class="main-nav__deepnav-title" href="#">Сумки и чемоданы</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские сумки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские рюкзаки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские кошельки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Женские клатчи</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские сумки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские рюкзаки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мужские кошельки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Чемоданы для путешествий</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Школьные портфели</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="main-nav__deepnav-col-right">
+                        <a class="main-nav__deepnav-title" href="#"></a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- /.main-nav__deepnav -->
+
+                  </li>
+                  <li class="main-nav__subnav-item">
+                    <a href="#" class="main-nav__subnav-link  icon-child">Для детей</a>
+
+                    <div class="main-nav__deepnav">
+                      <div class="main-nav__deepnav-col-left">
+                        <a class="main-nav__deepnav-title" href="#">Одежда и аксессуары</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Одежда для малышей</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Одежда для мальчиков</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Обувь для детей</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Обувь для малышей</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Аксессуары</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="main-nav__deepnav-col-right">
+                        <a class="main-nav__deepnav-title" href="#">Игрушки</a>
+                        <ul class="main-nav__deepnav-list">
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Электронные игрушки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Мягкие игрушки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Куклы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Погремушки</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Конструкторы</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Детские коврики</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">Познавательные, обучающие</a>
+                          </li>
+                          <li class="main-nav__deepnav-item">
+                            <a class="main-nav__deepnav-link" href="#">На коляску</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </li>
+                </ul>
+
+              </li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">О нас</a></li>
+              <li class="main-nav__item"><a href="#" class="main-nav__link">Тарифы</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+
+      </div>
+      <!-- /.main-menu -->
+
+    </header>
+
+
+
+    <form class="form-search" action="/">
+      <div class="container">
+        <div class="form-search__input-wrap">
+          <input class="form-search__input" type="search" name="search" placeholder="Искать...">
+          <a class="form-search__btn-remove  js-remove-input-text" href="#">remove</a>
+        </div>
+        <input class="btn" type="submit" value="Поиск" placeholder="Искать...">
+      </div>
+    </form>
+
+
+
+    <div class="discounts">
+
+      <div class="container">
+        
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><h2 class="h2">Скидки</h2></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Обувь</a></li>
+          <li class="breadcrumbs__item  is-active">Мужские кроссовки</li>
+        </ul>
+      
+      
+        <div class="goods-card-wrap">
+
+          <div class="block-wrapper">
+            <article class="goods-card-detail">
+            
+              <h3 class="h3">CP TRAINER от Nike</h3>
+              
+              <p>Мужские кроссовки CP TRAINER от Nike. Модель выполнена из износоустойчивой натуральной кожи и дышащего текстиля серого и ярко-зеленого цветов. Детали: текстильная внутренняя отделка, функциональная шнуровка, логотип бренда по бокам, рельефная подошва.</p>
+            
+              <div class="goods-card-detail__price">Старая цена: <span class="goods-card-detail__price-num  goods-card-detail__price-num--old">24 400</span></div>
+              <div class="goods-card-detail__price">Новая цена: <span class="goods-card-detail__price-num">22 000</span></div>
+            
+              <div class="goods-card-detail__info">
+                <div class="goods-card-detail__info-text  icon-magazine">Магазин: <a class="goods-card-detail__info-link" href="about.html">MenMaster</a></div>
+                <div class="goods-card-detail__info-text  icon-time">Дней до конца акции: <span class="goods-card-detail__info-count">30</span></div>
+              </div>
+            
+              <div class="goods-card-detail__raiting">
+                <div class="goods-card-detail__raiting-fingers">
+                  <a href="#" class="icon  icon-like-md">Like</a>
+                  <a href="#" class="icon  icon-dislike-md">Dislike</a>
+                </div>
+                <div class="goods-card-detail__raiting-count">+89</div>
+                <a class="goods-card-detail__btn-share" href="#">Поделиться скидкой</a>
+              </div>
+            
+              <div class="goods-card-detail__discount">10%<small class="small">скидка</small></div>
+            
+              <div class="inner-slider">
+                <img src="img/inner-slider.jpg" height="294" width="202" alt="goods">
+              </div>
+            
+            </article>
+            <!-- /.goods-card -->
+          </div>
+
+
+          <h2 class="h2">Похожие скидки</h2>
+
+      
+          <div class="block-wrapper">
+            <article class="goods-card">
+            
+              <h3 class="h3">MenMaster<small class="small">Опубликовано: <time datetime="2014-10-28">28.10.2014</time></small></h3>
+              
+              <p>Мужские кроссовки CP TRAINER от Nike. Верх модели создан из натуральной кожи и дышащего текстиля черно-зеленого цвета. Страна производства: Вьетнам.</p>
+            
+              <div class="goods-card__price">Старая цена: <span class="goods-card__price-num  goods-card__price-num--old">24 400</span></div>
+              <div class="goods-card__price">Новая цена: <span class="goods-card__price-num">22 000</span></div>
+            
+              <div class="goods-card__raiting">
+                <a href="#" class="icon  icon-like">Like</a> Рейтинг: <a class="goods-card__count  js-raiting-count-likes" href="#">+57</a> (из <span class="js-raiting-count-votes">58</span> голосов)
+              </div>
+            
+              <div class="goods-card__discount">10%<small class="small">скидка</small> <a class="btn" href="discount.html">Просмотреть</a></div>
+            
+              <figure class="goods-card__img-wrap">
+                <img src="img/cp-trainer.jpg" alt="cp-trainer" width="176" height="161">
+              </figure>
+            
+            </article>
+            <!-- /.goods-card -->
+          </div>
+
+
+          <div class="block-wrapper">
+            <article class="goods-card">
+            
+              <h3 class="h3">Nike<small class="small">Опубликовано: <time datetime="2014-10-25">25.10.2014</time></small></h3>
+              
+              <p>50% на кроссовки Air max от Nike. Кроссовки  NIKE AIR MAX - это Ваш правильный вариант для создания динамичного, креативного образа.</p>
+            
+              <div class="goods-card__price">Старая цена: <span class="goods-card__price-num  goods-card__price-num--old">24 400</span></div>
+              <div class="goods-card__price">Новая цена: <span class="goods-card__price-num">22 000</span></div>
+            
+              <div class="goods-card__raiting">
+                <a href="#" class="icon  icon-like">Like</a> Рейтинг: <a class="goods-card__count  js-raiting-count-likes" href="#">+57</a> (из <span class="js-raiting-count-votes">58</span> голосов)
+              </div>
+            
+              <div class="goods-card__discount">10%<small class="small">скидка</small> <a class="btn" href="discount.html">Просмотреть</a></div>
+            
+              <figure class="goods-card__img-wrap">
+                <img src="img/airmax.jpg" alt="airmax">
+              </figure>
+            
+            </article>
+            <!-- /.goods-card -->
+          </div>
+
+
+          <div class="paginator">
+            <span class="paginator__link">Страница 1 из 5</span>
+            <a class="paginator__link  is-active" href="#">1</a>
+            <a class="paginator__link" href="#">2</a>
+            <a class="paginator__link" href="#">3</a>
+            <a class="paginator__link" href="#">4</a>
+            <a class="paginator__link" href="#">5</a>
+            <a class="paginator__link" href="#">&raquo;</a>
+          </div>
+      
+        </div>
+        <!-- /.goods-card-wrap -->
+      
+      
+
+        <form class="form-filter  block-wrapper">
+        
+          <h3 class="form-filter__title">Фильтр магазинов</h3>
+        
+        
+          <h4 class="form-filter__section-header">Вид товара</h4>
+          <ul class="form-filter__menu-list  js-accordeon-list">
+        
+            <li class="form-filter__menu-list-item  js-accordeon-item">
+              <a class="form-filter__menu-list-link  icon-clothes  js-accordeon-trigger" href="#">Одежда и аксессуары</a>
+        
+              <ul class="form-filter__submenu-list  js-accordeon-inner  js-accordeon-inner-list">
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Для женщин</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Головные уборы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Пальто и куртки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Толстовки и худи</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Свитеры и рубашки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Топы и футболки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Платья</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Спортивные костюмы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Брюки и капри</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Юбки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Шорты</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Купальники</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Нижнее белье</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Аксессуары</a></li>
+                  </ul>
+        
+                </li>
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Для мужчин</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Головные уборы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Пальто и куртки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Толстовки и худи</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Свитеры и рубашки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Футболки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Костюмы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Спортивные костюмы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Джинсы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Брюки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Шорты</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Плавки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Нижнее белье</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Аксессуары</a></li>
+                  </ul>
+        
+                </li>
+        
+              </ul>
+        
+            </li>
+        
+            <li class="form-filter__menu-list-item  js-accordeon-item">
+              <a class="form-filter__menu-list-link  icon-shoes  js-accordeon-trigger" href="#">Обувь</a>
+        
+              <ul class="form-filter__submenu-list  js-accordeon-inner  js-accordeon-inner-list">
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Для взрослых</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские сапоги и ботинки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские туфли</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские сандалиии</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские балетки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские сланцы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские кроссовки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские тапочки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские ботинки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские сандалии</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские кроссовки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские сланцы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские тапочки</a></li>
+                  </ul>
+        
+                </li>
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Для детей</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Ботинки для девочек</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Сандалии для девочек</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Кроссовки для девочек</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Ботинки для мальчиков</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Ботинки для мальчиков</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Сандалии для мальчиков</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Детские тапочки</a></li>
+                  </ul>
+        
+                </li>
+        
+              </ul>
+        
+            </li>
+        
+            <li class="form-filter__menu-list-item  js-accordeon-item">
+              <a class="form-filter__menu-list-link  icon-electronics  js-accordeon-trigger" href="#">Электроника</a>
+        
+              <ul class="form-filter__submenu-list  js-accordeon-inner  js-accordeon-inner-list">
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Компьютеры и сеть</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Настольные компьютеры</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Ноутбуки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Игровые приставки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Периферия и оргтехника</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Комплектующие</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Манипуляторы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Носители информации</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Сетевое оборудование</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Серверы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Аксессуары для ноутбуков</a></li>
+                  </ul>
+        
+                </li>
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Бытовая техника</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Техника для кухни</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Домашнее видео и аудио</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Системы кондиционирования</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Пылесосы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Стиральные машины</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Камеры и фото</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Наушники</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Запчасти на технику</a></li>
+                  </ul>
+        
+                </li>
+        
+              </ul>
+              
+            </li>
+        
+            <li class="form-filter__menu-list-item  js-accordeon-item">
+              <a class="form-filter__menu-list-link  icon-bags  js-accordeon-trigger" href="#">Сумки</a>
+        
+              <ul class="form-filter__submenu-list  js-accordeon-inner  js-accordeon-inner-list">
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Сумки и чемоданы</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские сумки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские рюкзаки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские кошельки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Женские клатчи</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские сумки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские рюкзаки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мужские кошельки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Чемоданы для путешествий</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Школьные портфели</a></li>
+                  </ul>
+        
+                </li>
+        
+              </ul>
+              
+            </li>
+        
+            <li class="form-filter__menu-list-item  js-accordeon-item">
+              <a class="form-filter__menu-list-link  icon-child  js-accordeon-trigger" href="#">Для детей</a>
+        
+              <ul class="form-filter__submenu-list  js-accordeon-inner  js-accordeon-inner-list">
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Одежда и аксессуары</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Одежда для девочек</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Одежда для малышей</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Одежда для мальчиков</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Обувь для детей</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Обувь для малышей</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Аксессуары</a></li>
+                  </ul>
+        
+                </li>
+        
+                <li class="form-filter__submenu-list-item  js-accordeon-inner-item">
+                  <a href="#" class="form-filter__submenu-list-link  js-accordeon-inner-trigger">Игрушки</a>
+        
+                  <ul class="form-filter__deepmenu-list  js-accordeon-inner-inner">
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Игрушки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Электронные игрушки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Мягкие игрушки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Куклы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Погремушки</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Конструкторы</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Детские коврики</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">Познавательные и обучающие</a></li>
+                    <li class="form-filter__deepmenu-list-item"><a href="#" class="form-filter__deepmenu-list-link">На коляску</a></li>
+                  </ul>
+        
+                </li>
+        
+              </ul>
+              
+            </li>
+        
+          </ul>
+          <!-- /.form-filter__menu-list -->
+        
+        
+        
+          <h4 class="form-filter__section-header">Цена</h4>
+          <div class="range-filter">
+            <div class="js-range-filter-price"></div>
+            <span class="range-filter__value  range-filter__value--from  range-filter__value--tenge  js-range-filter-price-min">0</span>
+            <span class="range-filter__value  range-filter__value--to  range-filter__value--tenge  js-range-filter-price-max">740000</span>
+          </div>
+        
+          <h4 class="form-filter__section-header">Дней осталось</h4>
+          <div class="range-filter">
+            <div class="js-range-filter-days"></div>
+            <span class="range-filter__value  range-filter__value--days  range-filter__value--from  js-range-filter-days-min">0</span>
+            <span class="range-filter__value  range-filter__value--days  range-filter__value--to  js-range-filter-days-max">80</span>
+          </div>
+        
+        
+          <h4 class="form-filter__section-header">Рейтинг</h4>
+          <div class="range-filter">
+            <div class="js-range-filter-raiting"></div>
+            <span class="range-filter__value  range-filter__value--from  js-range-filter-raiting-min">0</span>
+            <span class="range-filter__value  range-filter__value--to  js-range-filter-raiting-max">120</span>
+          </div>
+        
+        
+          <input class="form-filter__btn-submit" type="submit" value="Поиск">
+        
+        </form>
+        <!-- /.form-filter -->
+      
+      </div>
+      <!-- /.container -->
+
+
+
+      <div class="container">
+        
+        <h2 class="h2">Популярные магазины:</h2>
+        
+        <ul class="slider-stores">
+          <li><a href="about.html"><img src="img/centar.jpg" height="111" width="110" alt=""></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+          <li><a href="about.html"><img src="img/centar.jpg" alt="" width="110" height="111"></a></li>
+        </ul>
+    
+      </div>
+
+    </div>
+    <!-- /.discounts -->
+
+
+
+    <footer class="page-footer">
+      
+      <div class="container">
+        
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        <div class="page-footer__join-us">Присоединяйтесь к нам!<br><a class="icon  icon-vk" href="#"></a></div>
+
+        <ul class="page-footer__nav">
+          <li class="page-footer__nav-item"><a href="index.html">Главная</a></li>
+          <li class="page-footer__nav-item  is-active"><a href="categories.html">Разделы</a></li>
+          <li class="page-footer__nav-item"><a href="#">О нас</a></li>
+          <li class="page-footer__nav-item"><a href="#">Тарифы</a></li>
+          <li class="page-footer__nav-item"><a href="#">Карта сайта</a></li>
+          <li class="page-footer__nav-item"><a href="#">Методы оплаты</a></li>
+        </ul>
+
+        <p class="page-footer__copyright">Copyright 2014, ИП "PRY". Все права на материалы, тексты и фотографии данного сайта защищены законом.</p>
+
+      </div>
+      <!-- /.container -->
+
+    </footer>
+
+
+
+    <!-- <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/bxslider-4/jquery.bxslider.min.js"></script>
+    <script src="bower/jquery-ui/ui/core.js"></script>
+    <script src="bower/jquery-ui/ui/widget.js"></script>
+    <script src="bower/jquery-ui/ui/mouse.js"></script>
+    <script src="bower/jquery-ui/ui/slider.js"></script>
+    <script src="bower/jquery-ui/ui/accordion.js"></script> -->
+    <script src="js/scripts.min.js"></script>
+
+  </body>
+</html>
